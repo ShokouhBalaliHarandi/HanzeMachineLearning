@@ -1,0 +1,49 @@
+Q1: What are common preprocessing steps? Explain for each step why and when you should execute this step and when not.
+-) Collecting Data: Collecting data from the external source in order to clean data and then provide it to use.
+-) Cleaning Data: Always there is a possibilty to be some impurity in data; therefore we have to choose some stategies to handle them. For instance:
+  *: replace them by some other values based on the project aim (if it deserves)
+  *: remove nan/na columns or rows
+Totally handeling missing values, remove noise, handling outliers, fixing data inconsistencies, mixed types, duplicates, mismatches, etc are done in this part.
+  -> If a dataset has highly relevant features may some of above list don't need.
+-) Handling the Categorical data: converting labelled data into numerical ones is more usefull for a machine to understand it. There is some approaches about this:
+  *: Label Encoding: for instanse converting true/false to 1/0
+  *: expanding multi labelled value columns: for example if dataset has a column by status name with 3 different labelled values we could expand it to 3 columns and by 0/1 shows the status of each row.
+    -> Some algorithms can handle categorical variables, but many ones require numerical inputs. If a dataset consists entirely of numerical features, it is possible to skip this step.
+-) Integrating Data: if we have different sources may it need to combine them. 
+    -> If we have just a single source of data, this step may not be required.
+-) Transforming data/Feature Scaling: convert all values into same magnitude level to prevent of confusing model. For this part we have to normalize/standardize the data or smoothing them.
+  -> Some algorithms like tree-based models that are not affected by feature scaling, so it may not be necessary in those cases.
+-) Reductind Data: minimizing complexity of data with PCA to reduce dimension or clustering, sampling, feature selection, etc up to the data and the project aim/process.
+  -> If a dataset has only a few features, we may could skip this step.
+  
+Due to link: #https://scikit-learn.org/stable/modules/preprocessing.html the total steps divided in the following list:
+ Standardization, or mean removal and variance scaling, Non-linear transformation, Normalization, Encoding categorical features, Discretization, Imputation of missing values, Generating polynomial features, Custom transformers
+
+In conclusion, execution of these preprocessing steps can vary depending on the specific requirements of an analysis or modeling task, as well as the nature and characteristics of your dataset. 
+
+Q2: What visualization methods are used in the cluster methods tutorial? Explain why the selected method is the most appropriate method for the visualization. Bonus points: do this as well for the scanpy tutorial.
+I think it depends on the nature of the project process or analysis.
+#https://towardsdatascience.com/best-practices-for-visualizing-your-cluster-results-20a3baac7426,
+#https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_display_object_visualization.html
+
+For example for Scanpy: (#https://scanpy-tutorials.readthedocs.io/en/latest/pbmc3k.html)
+The Elbow method may not be directly proper for determining the optimal number of clusters. Instead, Scanpy provides some other methods to evaluate the number of clusters, such as silhouette, iterative refinement approaches.
+
+
+Q3: What performance/evaluation metrics are in the cluster methods tutorial? Explain why the used methods are the most appropriate method for the evaluation.
+Due to #https://analyticsindiamag.com/a-tutorial-on-various-clustering-evaluation-metrics/
+ -) Silhouette Coefficient: It measures the quality of clustering by evaluating both the cohesion and separation. It ranges from -1 to 1, with higher values indicating better-defined clusters.
+ The Silhouette Coefficient is useful for assessing the overall quality and separation of clusters, taking into account both cohesion and separation.
+ -) Calinski Harabaz Index: It quantifies the separation between clusters. It measures both the cohesion within clusters and the separation between clusters to assess the quality of clustering results.
+ One advantage of the Calinski-Harabasz Index is that it doesn't require a ground truth or reference clustering for evaluation. It solely relies on the data and the clustering results. However, it should be noted that this index tends to favor clustering algorithms that produce convex-shaped clusters.
+ When comparing multiple clustering algorithms or evaluating different parameter settings, the Calinski-Harabasz Index can be used as a criterion to select the optimal clustering solution that maximizes the separation between clusters while minimizing the dispersion within clusters.
+ -) Davies Bouldin index: It quantifies the compactness and separation of clusters. It measures the average similarity between each cluster and its most similar neighboring cluster while considering the internal scatter of the clusters.
+ The DBI can be used as a measure to compare and select the best clustering solution among multiple algorithms or different parameter settings. It provides an indication of the quality of clustering by considering both compactness and separation aspects.
+ 
+
+
+
+
+
+
+ 
