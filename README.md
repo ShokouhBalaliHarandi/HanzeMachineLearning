@@ -1,8 +1,8 @@
 # HanzeMachineLearning
 this repo includes about 7 assignments of Datascience3 course related to supervised and unsupervised machine learning methods for "Data Science for Life Science" major in the Hanze university. The Repository just involves codes and most code has following steps:
--)loading data and exploratory analysis
--)prepare and preprocess data
--)clustering or classification data
+-) loading data and exploratory analysis
+-) prepare and preprocess data
+-) clustering or classification data
 
 All assignments are developed in jupyter notebooks with Python 3.9.13. and most libraries used in them are:
 - scikit-learn
@@ -10,6 +10,8 @@ All assignments are developed in jupyter notebooks with Python 3.9.13. and most 
 - pandas
 - matplotlib
 - sklearn
+
+The codes of this repository are under MIT License.
 
 ## Week01:
 Regarding this assignmet, the preprocessing and exploring of data is defiened.
