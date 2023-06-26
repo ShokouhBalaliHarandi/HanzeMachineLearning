@@ -32,3 +32,9 @@ The improved dataset will be used to evaluate the performance of various anomaly
 ## Week04:
 This assignment focuses on implementing the gradient descent algorithm to find the optimal parameters for a linear regression model. The task involves loading housing data, performing gradient descent, and analyzing the convergence of the cost function. The steps of this assignment are:
 Load the data, Scatter plot to visualize the relationship between the size of the houses and their prices. The scatter plot should display the sizes on the horizontal axis and the prices on the vertical axis, Compute the cost, Gradient descent, Plot cost values: Use the `compute_cost` function to calculate the cost at each iteration of gradient descent. Plot the cost values against the iteration numbers to analyze the convergence behavior, Analyze the plot, Comparison with sklearn
+
+## Week05:
+### Week05-Cancer.ipynb
+This assignment involves implementing and analyzing Support Vector Machines (SVM) using different kernels to classify the moon dataset. The goal is to explore the behavior of SVM with various kernel configurations and understand their impact on the separation of the moon dataset. After preprocessing and modeling data, evaluation is done with several metrics like Classification Report, AUC ROC and Precision-Recall Curve.
+### Week05-Moon.ipynb
+This assignment involves implementing and analyzing Support Vector Machines (SVM) using different kernels to classify the moon dataset. The goal is to explore the behavior of SVM with various kernel configurations and understand their impact on the separation of the moon dataset.
