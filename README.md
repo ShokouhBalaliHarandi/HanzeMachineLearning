@@ -4,25 +4,29 @@ this repo is about 7 assignments of Hanze university for "Data Science for Life 
 -)prepare and preprocess data
 -)clustering or classification data
 
-# Week01:
+## Week01:
 Regarding this assignmet, the preprocessing and exploring of data is defiened.
 In the project of this assignment which uses breast_cancer dataset, The first step involves preprocessing and exploring the dataset. 
 The dataset consists of various features related to a specific problem. For this step, the following tasks were performed:
 - Histogram: Histograms were created for each column in the dataset to visualize the distribution of the data.
 - The next step involved clustering the data using K-Means and Agglomerative clustering algorithms. 
-### K-Means Clustering
-- K-Means Model Fitting: K-Means models were fit with cluster values ranging from 1 to 20, and the number of clusters and inertia values were stored for each model.
-- Cluster vs. Inertia Plot: A plot was created to visualize the relationship between the number of clusters and the inertia value. This plot helps determine the ideal number of clusters.
+- The final task involved classification using Random Forest Classifiers.
 
-### Agglomerative Clustering
-- Dendrogram: A dendrogram was created from the agglomerative clustering results to visualize the hierarchical clustering structure.
+## Week02:
+### Week02-KmeanSpect for categorical data.ipynb
+This assignment focuses on comparing the performance of k-means and spectral clustering algorithms and evaluating the visualization techniques of PCA and t-SNE after loading, exploring data and preprocessing data. As independent data are categorical so they reformated and plots of the data based on formatted data. This assignment is done because I wanted to test how we should used categorical data in unsupervised methods.
+the source of data is from: https://ec.europa.eu/
+### Week02-Fitting for BreastCancer.ipynb
+This assignment focuses on comparing the performance of k-means and spectral clustering algorithms and evaluating the visualization techniques of PCA and t-SNE. The goal is to identify the best combination of clustering method and visualization technique for a given dataset. The assignment involves preprocessing the dataset, defining a pipeline with preprocessing and clustering, performing hyperparameter tuning using GridSearchCV, evaluating the performance of models, and selecting the best combination.
+### Week02-Text Detection.ipynb
+This assignment involves applying text clustering techniques to a given dataset. The goal is to cluster similar pieces of text together and gain insights from the clusters.
+The data involves 25 top news in recent years. Date: The date of the news headlines. Top1 to Top25: The news headlines for each date.
+the source of data is: https://www.refinitiv.com/
 
-## Task 3: Classification
+## Week03:
+This assignment focuses on improving the data quality for anomaly detection in time series data. The goal is to remove outliers due to sensor reading errors while preserving anomalies and perform resampling or aggregation to reduce noise and highlight higher-level patterns relevant for anomaly detection.
+Steps to Improve Data Quality: 
+Handling Missing Values, Outlier Removal, Resampling or Aggregation, Anomaly Detection Algorithms.
+The improved dataset will be used to evaluate the performance of various anomaly detection algorithms. Common algorithms such as Local Outlier Factor, Isolation Forest, One-Class Support Vector Machine, and Robust Covariance will be applied to detect anomalies in the time series data.
 
-The final task involved classification using Random Forest Classifiers. The following tasks were performed:
-
-- Binary Target Variable Creation: A binary target variable, denoting whether the quality is greater than 7 or not, was created.
-- Feature Engineering: Two datasets, namely X_with_kmeans and X_without_kmeans, were created by dropping specific columns from the original dataset.
-- Random Forest Classification: StratifiedSh
-
-
+## Week04:
