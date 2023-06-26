@@ -38,3 +38,13 @@ Load the data, Scatter plot to visualize the relationship between the size of th
 This assignment involves implementing and analyzing Support Vector Machines (SVM) using different kernels to classify the moon dataset. The goal is to explore the behavior of SVM with various kernel configurations and understand their impact on the separation of the moon dataset. After preprocessing and modeling data, evaluation is done with several metrics like Classification Report, AUC ROC and Precision-Recall Curve.
 ### Week05-Moon.ipynb
 This assignment involves implementing and analyzing Support Vector Machines (SVM) using different kernels to classify the moon dataset. The goal is to explore the behavior of SVM with various kernel configurations and understand their impact on the separation of the moon dataset.
+
+## Week06:
+This week assignments contains the code for two assignments related to the breast cancer and moon dataset. The assignments involve working with scikit-learn, performing data analysis, preprocessing, modeling, and evaluation using different algorithms and parameters. 
+### Week06-BreastCancer.ipynb:
+The goal is to add several new models with different parameters to the classifiers variable provided in the notebook. The scikit-learn library is used to work with decision trees and naive Bayes classifiers. 
+### Week06-Corona.ipynb
+This assignment focuses on preprocessing the moon dataset by addressing skewness and normality of the features.
+
+## Week07:
+This assignment focuses on building and evaluating different classifiers for breast cancer classification using the breast cancer dataset. The classifiers implemented include Bagging, Boosting, and a Dummy Classifier. The scikit-learn library is utilized for model creation and evaluation.
