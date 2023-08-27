@@ -1,0 +1,5 @@
+clustering_data_path: Data/clustering_data.csv
+breast_cancer_path: Data/breast-cancer.csv
+World_News_path: Data/WorldNewsData.csv
+sensor_path: Data/sensor.csv
+housing_data_path: Data/housing-data.txt
